@@ -1,0 +1,13 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+nav ul{
+  background-color: red;
+  margin-left: 15%;
+  border-width: 2px;
+  border-color: green;
+}
+p{
+  background-color: blue;
+}
