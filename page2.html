@@ -1,17 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head><title>Vareniki</title></head>
+  <head>
+    <title>Vareniki</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #ee9ca7, #ffdde1);
+      }
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+      }
+      .box {
+        width: 300px;
+        margin: 20px;
+        border: 2px solid #333;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        opacity: 0.5;
+        transition: opacity 0.3s;
+      }
+      .box img {
+        width: 100%;
+        vertical-align: top;
+      }
+      .box p {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: background-color 0.3s;
+      }
+      .box:hover {
+        opacity: 1;
+      }
+      .box:hover p {
+        background-color: rgba(255, 255, 255, 1);
+      }
+    </style>
+  </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</li>
-        <li><a href="MiroPage.html">Miro</li>
-        <li><a href="Borch_slav.html">Artemi</li>
-        <li><a href="page2.html">Misha</li>
-      </ul>
-    </nav>
-    <h1>VARENIKI</h1>
-    <img src="https://lenaskitchenblog.com/wp-content/uploads/2022/03/Vareniki-14.jpg">
-    <p>Potato Vareniki (Ukrainian Pierogi Recipe) are one of the best and most comforting Eastern European dishes. Stuffed with mashed potatoes and wrapped in homemade dough, they’re easy to love by both adults and kids!</p>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#ukraine" style="background-color: #ddd; color: black;">Ukraine</a>
+      <a href="#russia">Russia</a>
+      <a href="#germany">Germany</a>
+    </div>
+    <div class="content">
+      <div class="box">
+        <img src="https://lenaskitchenblog.com/wp-content/uploads/2022/03/Vareniki-14.jpg">
+        <p>Potato Vareniki (Ukrainian Pierogi Recipe) are one of the best and most comforting Eastern European dishes. Stuffed with mashed potatoes and wrapped in homemade dough, they’re easy to love by both adults and kids!</p>
+      </div>
+    </div>
   </body>
 </html>
